@@ -1,7 +1,7 @@
 // src/types/index.ts
 
 export interface TicketData {
-  cost: number;
+  unitPrice: number;
   quantity: number;
   maxLimit: number;
 }

@@ -14,9 +14,9 @@ const TicketInfo: React.FC<TicketInfoProps> = ({
     userTickets: 0,
   },
   initialTicketData = {
-    cost: 500,
-    quantity: 500,
-    maxLimit: 100000,
+    unitPrice: 1,
+    quantity: 5,
+    maxLimit: 10000,
   },
   initialCountdown = {
     days: 1,
@@ -131,7 +131,7 @@ const TicketInfo: React.FC<TicketInfoProps> = ({
         <div className="bg-green-800 rounded-b-lg p-4 text-white">
           <div className="flex justify-between mb-4">
             <span className="font-medium">Cost</span>
-            <span className="font-medium">{ticketData.cost} YUZU</span>
+          <span className="font-medium">{ticketData.quantity * ticketData.unitPrice} YUZU</span>
           </div>
 
           <button
